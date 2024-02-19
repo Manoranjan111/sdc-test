@@ -7,6 +7,5 @@ export class AppService {
   }
   getServerHealthy(): string {
     return 'Server is Healthy!';
-    return 
   }
 }
