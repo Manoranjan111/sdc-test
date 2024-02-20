@@ -12,8 +12,8 @@ export class AppController {
   }
   @Get('/health')
   serverHealthy(@Res() res): Response  {
-    console.log(process.env.PORT)
-    return res.status(201).json({message: `Server is Healthy and listening on port ${process.env.PORT}`});
+    // return res.status(201).json({message: `Server is Healthy and listening on port ${process.env.PORT}`});
+    return res.status(201).json({message: `Server is Healthy and listening on port 8000`});
     // return this.appService.getServerHealthy();
   }
 }
